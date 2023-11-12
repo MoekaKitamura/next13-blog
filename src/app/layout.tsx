@@ -17,6 +17,8 @@ export default function RootLayout({
     <html lang="ja">
       <body className="container mx-auto bg-slate-700 text-slate-50">
         <Header />
+        {/* ↓ Suspenseいらなそう */}
+        {/* <Suspense fallback={<Loading />}>{children}</Suspense> */}
         {children}
         <Footer />
       </body>
