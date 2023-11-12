@@ -1,5 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import Header from "./Header";
+import Footer from "./Footer";
 
 export const metadata: Metadata = {
   title: "Next Blog",
@@ -13,10 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body>
-        <header className="text-red-300">Header</header>
+      <body className="container mx-auto bg-slate-700 text-slate-50">
+        <Header />
         {children}
-        <footer>Footer</footer>
+        <Footer />
       </body>
     </html>
   );
